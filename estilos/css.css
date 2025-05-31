@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans&display=swap');
+
+:root {
+    --cor-fonte-principal: #dce0e6;
+    --cor-fundo-principal: #1f1f20;
+    --cor-fundo-secundaria: #245CB3;  
+    --cor-fundo-terciaria: #606d80; 
+    --cor-fundo-quartenaria: #567ebb; 
+}
+html{
+    background-color: var(--cor-fundo-principal);
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Funnel Sans', sans-serif;
+    font-size: 3vw;
+    font-weight: bolder;
+    color: var(--cor-fonte-principal);
+}   
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;    
+    position: fixed;
+    top: 0;
+    background-color: var(--cor-fundo-secundaria);
+    height: auto;
+    padding: 10px;
+}
+.menu { 
+    width: 100%; 
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: var(--cor-fundo-principal);
+    font-size: 1.5rem;
+    text-align: center;
+    align-self: center;
+
+}
+.menu a {
+    display: none;
+    padding: 3px;
+    text-decoration: none;
+    color: rgb(62, 140, 185);
+    background-color: whitesmoke;
+    border-top: 1px dotted rgb(0, 0, 0);
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: background-color 1s;
+}
+.menu:hover a {
+    display: block;
+}
+.menu a:hover {
+    background-color: gray;
+}
+#img_logo{
+    width: 70%;
+}
+main{
+padding-top: 25%;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--cor-fonte-principal);
+    background-color: var(--cor-fundo-secundaria);
+    border-radius: 20px;
+    margin: 10px;
+    color: #dce0e6;
+    font-style: italic;
+}
+#h1_destaque{
+    animation: troca_cor 5s infinite;
+}
+@keyframes troca_cor{
+    0%{ color: var(--cor-fonte-principal);}
+    33%{color: var(--cor-fundo-principal);}
+    66%{color: rgb(255, 0, 0);}
+}
+.destaq { 
+    width: 80%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: row;
+}
+.seta {
+    width: 13%;
+    cursor: pointer;
+    margin: 5px;
+}
+.seta:hover{
+    transform: scale(1.1);
+}
+#ante{
+    width: 100%;
+}
+#prox{
+    width: 100%;
+}
+.destaque{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: auto;
+}
+.destaque img{
+    width: 100%;
+    border-radius: 20px;
+}
+#p_link_destaq {
+    text-align: center;
+    font-size: 2rem;
+}
+#link_destaq {
+    padding: 7px 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--cor-fonte-principal);
+    background-color: var(--cor-fundo-secundaria); 
+    box-sizing: border-box;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.308);
+    color: #dce0e6;
+}
+footer{
+    text-align: center; 
+    width: 100%;
+}
+::-webkit-scrollbar {
+    width: 10px; 
+    height: 10px; 
+}
+:-webkit-scrollbar-track {
+    background: #f0f0f0; 
+    border-radius: 5px; 
+}
+::-webkit-scrollbar-thumb {
+    background: #000000; 
+    border-radius: 5px; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+#pesquisa {    
+    color:  rgb(0, 0, 0);
+}
+#pesquisa p {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+#img_pesquisar {
+    width: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.945);
+    border-radius: 10px;
+    box-shadow: 2px 2px var(--cor-fonte-principal);
+}
+#h2_pesquisa{
+    text-align: center;
+    color: var(--cor-fonte-principal);
+}
+#buscar{
+    font-family: inherit;
+    font-weight: inherit;
+    text-align: inherit;
+    background-color: black;
+    color: var(--cor-fonte-principal);
+    border-color: wheat;   
+    width: 80%;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.container{
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+    width: 100%;
+    border-radius: 15px; 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.308);
+    background-color: var(--cor-fundo-terciaria);
+    margin: 10px auto 10px auto;
+}
+.box_destaque{
+    width: 100%;
+    border-radius: 15px; 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.308);
+    background-color: var(--cor-fundo-terciaria);
+    margin: 10px auto 10px auto;    
+}
+.img_game{
+    width: 100%;
+    border-radius: 10px;    
+}
+#img_destaque{
+    width: 100%;
+    border-radius: 10px;   
+}
+.p_nome, #p_preço{
+    width: auto;
+    font-size: 1.5rem;
+    background-color: var(--cor-fundo-principal);
+    border-radius: 20px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.308);
+    text-align: center;
+    padding: 10px;
+}
+.p_game{
+    width: auto;
+    font-size: 1.5rem;
+    background-color: var(--cor-fundo-principal);
+    border-radius: 20px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.308);
+    text-align: center;
+    padding: 10px;
+}
+.bt_game{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    font-weight: bolder;
+    margin: 10px;
+}
+.a_game{
+    background-color: var(--cor-fundo-quartenaria);
+    color: var(--cor-fonte-principal);
+    box-shadow: 5px 3px rgba(0, 0, 0, 0.534);
+    border-radius: 20px;
+    width: 90%;
+    padding: 5px;
+    height: 50px;
+    font-size: 4vw;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#img_breve{
+    width: 100%;
+    border-radius: 10px;
+}
+#h3_form{
+    justify-content: center ;
+    margin: auto;
+    align-items: center;
+    display: flex; 
+}
+.form{
+    background-color: #606d80;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.39);
+    margin: 20px;   
+    align-items: center ;
+    padding: 8px;
+}
+#bt_enviar{
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: var(--cor-fonte-principal);
+}
+#form_input{
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+#inputs{
+    width: 90%;
+    font-family: inherit;
+    font-weight: inherit;
+    text-align: inherit;
+    color: white;
+    border-color: wheat;   
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input, textarea{
+    background-color: #000000;
+    border-radius: 10px;
+    width: 100%;   
+    height: 2rem;     
+    box-shadow: 3px 3px #f0f0f0f1;
+    color: white    ;
+    font-size: 1rem;
+}   
+.loja{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+    padding: 10px;
+    border-radius: 20px;
+}
+#video_compra{
+    height: 260px;
+    width: 90%;
+    border-radius: 10px;
+}
+#img_compra{
+    width: 90%;
+    border-radius: 15px;
+}
+.descr{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-direction: column;
+    color: var(--cor-fonte-principal);
+    background-color: var(--cor-fundo-terciaria);
+    text-align: justify;
+    padding: 15px;
+    box-shadow: 5px 5px 3px 3px rgba(0, 0, 0, 0.308);
+    border-radius: 10px;
+}
+#img_steam{
+    width: 50px;
+    margin-right: 10px;
+}
+#a_compra, #a_home{
+    text-decoration: none;
+    color: var(--cor-fonte-principal);
+    font-size: 1.8rem;
+}
+#bt_compra{
+    background-color: darkblue;
+    box-shadow: 2px 2px 2px 2px lightblue;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#nome{
+    font-size: 3rem;
+    font-weight: bolder;
+    font-style: oblique;
+    margin: 0;
+}
+#bt_home{
+    background-color: darkblue;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 7px;
+    box-shadow: 2px 2px 1px 1px lightblue;
+}
+textarea{
+    height: 15vw;
+}
+.bt_game:hover, #bt_home:hover, #bt_compra:hover, #bt_enviar:hover, #p_link_destaq:hover{
+    transform: scale(1.05);
+}
+#titulo{
+    font-size: 5vw;
+}
+
+@media (min-width: 768px){
+    .menu{
+        width: 70%;
+        margin-left: 30%;
+    }
+    #img_logo{
+        width: 200px;
+    }
+    main{
+       padding-top: 10%;
+    }
+    .destaque{
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+    }
+    .seta{
+        margin: 10%;
+        width: 20%;
+    }
+    h1{
+        margin: auto;
+        width: 80%;
+        font-size: 3vw;
+    }
+    #h2_pesquisa{
+        text-align: center;
+        font-size: 2vw;
+    }
+    .container{
+        flex-wrap: wrap;
+        display: flex;
+    }
+    .box{
+        width: 30%;
+        padding: 20px;  
+    }
+    .p_game{
+        width: 100%;
+        margin: 20px;
+        font-size: 2vw;
+        border-radius: 20px;
+    }
+    .bt_game{
+        font-size: 2vw;
+    }
+    #buscar{
+        width: 30%;
+        height: auto;
+        font-size: 1vw;
+        height: auto;
+        padding: 10px;
+    }
+    #img_pesquisar{
+        width:40px;
+    }
+    .box_destaque{
+        margin-top: 60px;
+        padding: 20px;
+        width: 90%;
+    }
+    .p_nome, #p_preço {
+        width: 100%;
+        margin: 20px;
+        font-size: 2vw;
+        border-radius: 20px;
+    }
+    #p_link_destaq{
+        font-size: 4vw  ;
+    }
+    .form{
+        width: 80%;
+        justify-content: center;
+        margin: auto;
+        border-radius: 40px;
+        padding: 20px;
+    }
+    #h3_form{
+        font-size: 2vw;
+    }
+    #inputs{
+        width: 80%;
+        height: auto;
+        font-size: 1vw;
+        
+    }
+    input{
+        height: auto;
+        border-radius: 40px;
+        padding: 10px;
+    }
+    .loja{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction:row ;
+        width: 90%;
+        padding: 0;
+        justify-content: center;
+        margin: auto;
+    }
+    #img_compra{
+        width: 45%; 
+        margin: 10px
+    }
+    #video_compra{
+        width: 45%;
+        height: 400px;
+        margin: 10px;
+    }   
+    
+    #img_steam{
+        width: 100px;   
+    }
+    .descr{
+        font-size: 2vw;
+    }
+    #sinop{
+        width: 70%; 
+        font-size: 2vw;
+    }
+    #a_compra, #a_home{
+        font-size: 4vw; 
+    }
+    #nome{
+        font-size: 7vw;
+    }
+    .lista{
+        flex-direction: column;
+        display: flex;
+    }
+    .a_game{
+        font-size: 2vw;
+        font-weight: bolder;
+        width: 100%;
+        height: 3.5vw;
+    }
+    input, textarea{
+        border-radius: 30px;
+        font-size: 2vw
+    }
+}
